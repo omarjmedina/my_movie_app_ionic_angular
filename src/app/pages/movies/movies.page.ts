@@ -10,8 +10,7 @@ import { IMovies } from 'src/app/model/IMovies.interface';
 })
 export class MoviesPage implements OnInit {
   results: Observable<IMovies>;
-  term: string = '';
-  type: string = '';
+  title: string = '';
 
   constructor(private movieSv: MovieService) { }
 
@@ -19,7 +18,7 @@ export class MoviesPage implements OnInit {
   }
 
   onSearchChange(){
-    this.results = this.movieSv.searchMovie(this.term, this.type);
+    this.results = this.movieSv.searchMovie(this.title);
     console.log(this.results);
   }
 

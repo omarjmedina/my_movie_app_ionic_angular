@@ -5,12 +5,22 @@
 </ion-header>
 
 <ion-content>
-  <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="term" (ionChange)="onSearchChange($event)"></ion-searchbar>
+  <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="title" (ionChange)="onSearchChange($event)"></ion-searchbar>
+
+  <!-- <ion-slides button *ngIf="title === ''">
+
+  </ion-slides> -->
+
+  <swiper #swiper>
+   <ng-template swiperSlide>Slide 1</ng-template>
+   <ng-template swiperSlide>Slide 2</ng-template>
+   <ng-template swiperSlide>Slide 3</ng-template>
+  </swiper>
 
   <ion-list>
-    <ion-item button *ngFor="let movie of results | async">
+    <ion-item button *ngFor="let movie of results | async" [routerLink]="['/', 'movie-details', movie.imdbID]">
     <ion-avatar slot="start">
-      <img [src]="movie.Poster">
+      <img [src]="movie.Poster" alt={{movie.Title}} *ngIf="movie.Poster !== 'N/A'">
     </ion-avatar>
     <ion-label>
       <h3 style="font-weight: bold;">{{movie.Title}}</h3>

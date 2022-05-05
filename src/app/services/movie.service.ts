@@ -12,8 +12,8 @@ export class MovieService {
 
   constructor(private http: HttpClient) { }
 
-  searchMovie(tittle: string, type: string){
-    this.url = `http://www.omdbapi.com/?s=${encodeURI(tittle)}&type=${type}&apikey=${this.apiKey}`;
+  searchMovie(tittle: string){
+    this.url = `http://www.omdbapi.com/?s=${encodeURI(tittle)}&type=&apikey=${this.apiKey}`;
     console.log(this.url);
     return this.http.get<IMovies>(this.url).pipe(map(results => results['Search']));
   }
