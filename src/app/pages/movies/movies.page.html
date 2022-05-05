@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My Movies App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="term" (ionChange)="onSearchChange($event)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item button *ngFor="let movie of results | async">
+    <ion-avatar slot="start">
+      <img [src]="movie.Poster">
+    </ion-avatar>
+    <ion-label>
+      <h3 style="font-weight: bold;">{{movie.Title}}</h3>
+      <h4>{{movie.Year}}</h4>
+    </ion-label>
+    <ion-label slot="end" *ngIf="movie.Type === 'movie'">
+     <h6>Movie</h6>
+     <ion-icon slot="end" name="videocam"></ion-icon>
+    </ion-label>
+    <ion-label slot="end" *ngIf="movie.Type === 'series'">
+      <h6>Series</h6>
+      <ion-icon slot="end" name="tv"></ion-icon>
+     </ion-label>
+     <ion-label slot="end" *ngIf="movie.Type === 'episode'">
+      <h6>Episode</h6>
+      <ion-icon slot="end" name="tablet-landscape"></ion-icon>
+     </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
