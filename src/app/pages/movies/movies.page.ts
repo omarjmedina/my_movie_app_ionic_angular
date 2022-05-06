@@ -18,6 +18,7 @@ export class MoviesPage implements OnInit {
   public swiperConfig: SwiperOptions = {
     slidesPerView: 2,
     pagination: { clickable: true },
+    spaceBetween: 5
   };
 
   constructor(private movieSv: MovieService) { }
