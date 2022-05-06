@@ -15,10 +15,22 @@
   <ion-card>
     <ion-card-header class="ion-text-center">
       <ion-card-title>{{content?.Title}}</ion-card-title>
-      <ion-card-subtitle>{{content?.Year}} {{content?.Language}}</ion-card-subtitle>
+      <ion-card-subtitle>
+        <ion-grid>
+          <ion-row>
+            <ion-col>Year: {{content?.Year}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Language: {{content?.Language}}</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>Duration: {{content?.Runtime}}</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-    <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img ion-padding">
+    <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img ion-marging">
     {{content?.Plot}}
     <ion-item lines="none">
       <ion-icon slot="start" name="star-half"></ion-icon>

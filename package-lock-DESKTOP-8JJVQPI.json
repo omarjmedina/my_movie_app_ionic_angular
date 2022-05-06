@@ -1,0 +1,955 @@
+{
+  "name": "movie_app_ionic_angular",
+  "lockfileVersion": 2,
+  "requires": true,
+  "packages": {
+    "": {
+      "dependencies": {
+        "@ionic/angular": "^6.1.4"
+      }
+    },
+    "node_modules/@angular/common": {
+      "version": "13.2.7",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      },
+      "engines": {
+        "node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+      },
+      "peerDependencies": {
+        "@angular/core": "13.2.7",
+        "rxjs": "^6.5.3 || ^7.4.0"
+      }
+    },
+    "node_modules/@angular/core": {
+      "version": "13.2.7",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      },
+      "engines": {
+        "node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+      },
+      "peerDependencies": {
+        "rxjs": "^6.5.3 || ^7.4.0",
+        "zone.js": "~0.11.4"
+      }
+    },
+    "node_modules/@angular/forms": {
+      "version": "13.2.7",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      },
+      "engines": {
+        "node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+      },
+      "peerDependencies": {
+        "@angular/common": "13.2.7",
+        "@angular/core": "13.2.7",
+        "@angular/platform-browser": "13.2.7",
+        "rxjs": "^6.5.3 || ^7.4.0"
+      }
+    },
+    "node_modules/@angular/platform-browser": {
+      "version": "13.2.7",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      },
+      "engines": {
+        "node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+      },
+      "peerDependencies": {
+        "@angular/animations": "13.2.7",
+        "@angular/common": "13.2.7",
+        "@angular/core": "13.2.7"
+      },
+      "peerDependenciesMeta": {
+        "@angular/animations": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/@angular/router": {
+      "version": "13.2.7",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      },
+      "engines": {
+        "node": "^12.20.0 || ^14.15.0 || >=16.10.0"
+      },
+      "peerDependencies": {
+        "@angular/common": "13.2.7",
+        "@angular/core": "13.2.7",
+        "@angular/platform-browser": "13.2.7",
+        "rxjs": "^6.5.3 || ^7.4.0"
+      }
+    },
+    "node_modules/@axe-core/playwright": {
+      "version": "4.4.2",
+      "license": "MPL-2.0",
+      "dependencies": {
+        "axe-core": "^4.4.1",
+        "playwright": "^1.16.2"
+      },
+      "peerDependencies": {
+        "playwright": ">= 1.0.0"
+      }
+    },
+    "node_modules/@ionic/angular": {
+      "version": "6.1.4",
+      "resolved": "https://registry.npmjs.org/@ionic/angular/-/angular-6.1.4.tgz",
+      "integrity": "sha512-uCXKrcynBnOgsbK92crGchA7QcQXoURYAtOyQ/e4/LkubLxQHkthmZzkMZ0jO/3XNzsD3HAZ6oUnqCCiuWHhNg==",
+      "dependencies": {
+        "@ionic/core": "^6.1.4",
+        "jsonc-parser": "^3.0.0",
+        "tslib": "^2.0.0"
+      },
+      "peerDependencies": {
+        "@angular/core": ">=12.0.0",
+        "@angular/forms": ">=12.0.0",
+        "@angular/router": ">=12.0.0",
+        "rxjs": ">=6.6.0",
+        "zone.js": ">=0.11.0"
+      }
+    },
+    "node_modules/@ionic/core": {
+      "version": "6.1.4",
+      "license": "MIT",
+      "dependencies": {
+        "@axe-core/playwright": "^4.4.2",
+        "@stencil/core": "^2.14.2",
+        "ionicons": "^6.0.0",
+        "tslib": "^2.1.0"
+      }
+    },
+    "node_modules/@stencil/core": {
+      "version": "2.15.1",
+      "license": "MIT",
+      "bin": {
+        "stencil": "bin/stencil"
+      },
+      "engines": {
+        "node": ">=12.10.0",
+        "npm": ">=6.0.0"
+      }
+    },
+    "node_modules/@types/node": {
+      "version": "12.20.50",
+      "license": "MIT",
+      "optional": true
+    },
+    "node_modules/@types/yauzl": {
+      "version": "2.10.0",
+      "license": "MIT",
+      "optional": true,
+      "dependencies": {
+        "@types/node": "*"
+      }
+    },
+    "node_modules/agent-base": {
+      "version": "6.0.2",
+      "license": "MIT",
+      "dependencies": {
+        "debug": "4"
+      },
+      "engines": {
+        "node": ">= 6.0.0"
+      }
+    },
+    "node_modules/axe-core": {
+      "version": "4.4.1",
+      "license": "MPL-2.0",
+      "engines": {
+        "node": ">=4"
+      }
+    },
+    "node_modules/balanced-match": {
+      "version": "1.0.2",
+      "license": "MIT"
+    },
+    "node_modules/brace-expansion": {
+      "version": "1.1.11",
+      "license": "MIT",
+      "dependencies": {
+        "balanced-match": "^1.0.0",
+        "concat-map": "0.0.1"
+      }
+    },
+    "node_modules/buffer-crc32": {
+      "version": "0.2.13",
+      "license": "MIT",
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/colors": {
+      "version": "1.4.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.1.90"
+      }
+    },
+    "node_modules/commander": {
+      "version": "8.3.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 12"
+      }
+    },
+    "node_modules/concat-map": {
+      "version": "0.0.1",
+      "license": "MIT"
+    },
+    "node_modules/debug": {
+      "version": "4.3.3",
+      "license": "MIT",
+      "dependencies": {
+        "ms": "2.1.2"
+      },
+      "engines": {
+        "node": ">=6.0"
+      },
+      "peerDependenciesMeta": {
+        "supports-color": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/end-of-stream": {
+      "version": "1.4.4",
+      "license": "MIT",
+      "dependencies": {
+        "once": "^1.4.0"
+      }
+    },
+    "node_modules/escape-string-regexp": {
+      "version": "1.0.5",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.8.0"
+      }
+    },
+    "node_modules/extract-zip": {
+      "version": "2.0.1",
+      "license": "BSD-2-Clause",
+      "dependencies": {
+        "debug": "^4.1.1",
+        "get-stream": "^5.1.0",
+        "yauzl": "^2.10.0"
+      },
+      "bin": {
+        "extract-zip": "cli.js"
+      },
+      "engines": {
+        "node": ">= 10.17.0"
+      },
+      "optionalDependencies": {
+        "@types/yauzl": "^2.9.1"
+      }
+    },
+    "node_modules/fd-slicer": {
+      "version": "1.1.0",
+      "license": "MIT",
+      "dependencies": {
+        "pend": "~1.2.0"
+      }
+    },
+    "node_modules/fs.realpath": {
+      "version": "1.0.0",
+      "license": "ISC"
+    },
+    "node_modules/get-stream": {
+      "version": "5.2.0",
+      "license": "MIT",
+      "dependencies": {
+        "pump": "^3.0.0"
+      },
+      "engines": {
+        "node": ">=8"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/glob": {
+      "version": "7.2.0",
+      "license": "ISC",
+      "dependencies": {
+        "fs.realpath": "^1.0.0",
+        "inflight": "^1.0.4",
+        "inherits": "2",
+        "minimatch": "^3.0.4",
+        "once": "^1.3.0",
+        "path-is-absolute": "^1.0.0"
+      },
+      "engines": {
+        "node": "*"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/isaacs"
+      }
+    },
+    "node_modules/graceful-fs": {
+      "version": "4.2.10",
+      "license": "ISC"
+    },
+    "node_modules/https-proxy-agent": {
+      "version": "5.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "agent-base": "6",
+        "debug": "4"
+      },
+      "engines": {
+        "node": ">= 6"
+      }
+    },
+    "node_modules/inflight": {
+      "version": "1.0.6",
+      "license": "ISC",
+      "dependencies": {
+        "once": "^1.3.0",
+        "wrappy": "1"
+      }
+    },
+    "node_modules/inherits": {
+      "version": "2.0.4",
+      "license": "ISC"
+    },
+    "node_modules/ionicons": {
+      "version": "6.0.1",
+      "license": "MIT",
+      "dependencies": {
+        "@stencil/core": "~2.12.0"
+      }
+    },
+    "node_modules/ip": {
+      "version": "1.1.5",
+      "license": "MIT"
+    },
+    "node_modules/jpeg-js": {
+      "version": "0.4.3",
+      "license": "BSD-3-Clause"
+    },
+    "node_modules/jsonc-parser": {
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    "node_modules/mime": {
+      "version": "2.6.0",
+      "license": "MIT",
+      "bin": {
+        "mime": "cli.js"
+      },
+      "engines": {
+        "node": ">=4.0.0"
+      }
+    },
+    "node_modules/minimatch": {
+      "version": "3.0.4",
+      "license": "ISC",
+      "dependencies": {
+        "brace-expansion": "^1.1.7"
+      },
+      "engines": {
+        "node": "*"
+      }
+    },
+    "node_modules/ms": {
+      "version": "2.1.2",
+      "license": "MIT"
+    },
+    "node_modules/once": {
+      "version": "1.4.0",
+      "license": "ISC",
+      "dependencies": {
+        "wrappy": "1"
+      }
+    },
+    "node_modules/path-is-absolute": {
+      "version": "1.0.1",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.10.0"
+      }
+    },
+    "node_modules/pend": {
+      "version": "1.2.0",
+      "license": "MIT"
+    },
+    "node_modules/pixelmatch": {
+      "version": "5.2.1",
+      "license": "ISC",
+      "dependencies": {
+        "pngjs": "^4.0.1"
+      },
+      "bin": {
+        "pixelmatch": "bin/pixelmatch"
+      }
+    },
+    "node_modules/playwright": {
+      "version": "1.21.1",
+      "hasInstallScript": true,
+      "license": "Apache-2.0",
+      "dependencies": {
+        "playwright-core": "1.21.1"
+      },
+      "bin": {
+        "playwright": "cli.js"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/playwright-core": {
+      "version": "1.21.1",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "colors": "1.4.0",
+        "commander": "8.3.0",
+        "debug": "4.3.3",
+        "extract-zip": "2.0.1",
+        "https-proxy-agent": "5.0.0",
+        "jpeg-js": "0.4.3",
+        "mime": "3.0.0",
+        "pixelmatch": "5.2.1",
+        "pngjs": "6.0.0",
+        "progress": "2.0.3",
+        "proper-lockfile": "4.1.2",
+        "proxy-from-env": "1.1.0",
+        "rimraf": "3.0.2",
+        "socks-proxy-agent": "6.1.1",
+        "stack-utils": "2.0.5",
+        "ws": "8.4.2",
+        "yauzl": "2.10.0",
+        "yazl": "2.5.1"
+      },
+      "bin": {
+        "playwright": "cli.js"
+      },
+      "engines": {
+        "node": ">=12"
+      }
+    },
+    "node_modules/pngjs": {
+      "version": "6.0.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">=12.13.0"
+      }
+    },
+    "node_modules/progress": {
+      "version": "2.0.3",
+      "license": "MIT",
+      "engines": {
+        "node": ">=0.4.0"
+      }
+    },
+    "node_modules/proper-lockfile": {
+      "version": "4.1.2",
+      "license": "MIT",
+      "dependencies": {
+        "graceful-fs": "^4.2.4",
+        "retry": "^0.12.0",
+        "signal-exit": "^3.0.2"
+      }
+    },
+    "node_modules/proxy-from-env": {
+      "version": "1.1.0",
+      "license": "MIT"
+    },
+    "node_modules/pump": {
+      "version": "3.0.0",
+      "license": "MIT",
+      "dependencies": {
+        "end-of-stream": "^1.1.0",
+        "once": "^1.3.1"
+      }
+    },
+    "node_modules/retry": {
+      "version": "0.12.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 4"
+      }
+    },
+    "node_modules/rimraf": {
+      "version": "3.0.2",
+      "license": "ISC",
+      "dependencies": {
+        "glob": "^7.1.3"
+      },
+      "bin": {
+        "rimraf": "bin.js"
+      },
+      "funding": {
+        "url": "https://github.com/sponsors/isaacs"
+      }
+    },
+    "node_modules/rxjs": {
+      "version": "6.6.7",
+      "license": "Apache-2.0",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^1.9.0"
+      },
+      "engines": {
+        "npm": ">=2.0.0"
+      }
+    },
+    "node_modules/signal-exit": {
+      "version": "3.0.7",
+      "license": "ISC"
+    },
+    "node_modules/smart-buffer": {
+      "version": "4.2.0",
+      "license": "MIT",
+      "engines": {
+        "node": ">= 6.0.0",
+        "npm": ">= 3.0.0"
+      }
+    },
+    "node_modules/socks": {
+      "version": "2.6.2",
+      "license": "MIT",
+      "dependencies": {
+        "ip": "^1.1.5",
+        "smart-buffer": "^4.2.0"
+      },
+      "engines": {
+        "node": ">= 10.13.0",
+        "npm": ">= 3.0.0"
+      }
+    },
+    "node_modules/socks-proxy-agent": {
+      "version": "6.2.0",
+      "license": "MIT",
+      "dependencies": {
+        "agent-base": "^6.0.2",
+        "debug": "^4.3.3",
+        "socks": "^2.6.2"
+      },
+      "engines": {
+        "node": ">= 10"
+      }
+    },
+    "node_modules/stack-utils": {
+      "version": "2.0.5",
+      "license": "MIT",
+      "dependencies": {
+        "escape-string-regexp": "^2.0.0"
+      },
+      "engines": {
+        "node": ">=10"
+      }
+    },
+    "node_modules/tslib": {
+      "version": "2.4.0",
+      "license": "0BSD"
+    },
+    "node_modules/wrappy": {
+      "version": "1.0.2",
+      "license": "ISC"
+    },
+    "node_modules/ws": {
+      "version": "8.4.2",
+      "license": "MIT",
+      "engines": {
+        "node": ">=10.0.0"
+      },
+      "peerDependencies": {
+        "bufferutil": "^4.0.1",
+        "utf-8-validate": "^5.0.2"
+      },
+      "peerDependenciesMeta": {
+        "bufferutil": {
+          "optional": true
+        },
+        "utf-8-validate": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/yauzl": {
+      "version": "2.10.0",
+      "license": "MIT",
+      "dependencies": {
+        "buffer-crc32": "~0.2.3",
+        "fd-slicer": "~1.1.0"
+      }
+    },
+    "node_modules/yazl": {
+      "version": "2.5.1",
+      "license": "MIT",
+      "dependencies": {
+        "buffer-crc32": "~0.2.3"
+      }
+    },
+    "node_modules/zone.js": {
+      "version": "0.11.5",
+      "license": "MIT",
+      "peer": true,
+      "dependencies": {
+        "tslib": "^2.3.0"
+      }
+    }
+  },
+  "dependencies": {
+    "@angular/common": {
+      "version": "13.2.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    },
+    "@angular/core": {
+      "version": "13.2.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    },
+    "@angular/forms": {
+      "version": "13.2.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    },
+    "@angular/platform-browser": {
+      "version": "13.2.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    },
+    "@angular/router": {
+      "version": "13.2.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    },
+    "@axe-core/playwright": {
+      "version": "4.4.2",
+      "requires": {
+        "axe-core": "^4.4.1",
+        "playwright": "^1.16.2"
+      }
+    },
+    "@ionic/angular": {
+      "version": "6.1.4",
+      "resolved": "https://registry.npmjs.org/@ionic/angular/-/angular-6.1.4.tgz",
+      "integrity": "sha512-uCXKrcynBnOgsbK92crGchA7QcQXoURYAtOyQ/e4/LkubLxQHkthmZzkMZ0jO/3XNzsD3HAZ6oUnqCCiuWHhNg==",
+      "requires": {
+        "@ionic/core": "^6.1.4",
+        "jsonc-parser": "^3.0.0",
+        "tslib": "^2.0.0"
+      }
+    },
+    "@ionic/core": {
+      "version": "6.1.4",
+      "requires": {
+        "@axe-core/playwright": "^4.4.2",
+        "@stencil/core": "^2.14.2",
+        "ionicons": "^6.0.0",
+        "tslib": "^2.1.0"
+      }
+    },
+    "@stencil/core": {
+      "version": "2.15.1"
+    },
+    "@types/node": {
+      "version": "12.20.50",
+      "optional": true
+    },
+    "@types/yauzl": {
+      "version": "2.10.0",
+      "optional": true,
+      "requires": {
+        "@types/node": "*"
+      }
+    },
+    "agent-base": {
+      "version": "6.0.2",
+      "requires": {
+        "debug": "4"
+      }
+    },
+    "axe-core": {
+      "version": "4.4.1"
+    },
+    "balanced-match": {
+      "version": "1.0.2"
+    },
+    "brace-expansion": {
+      "version": "1.1.11",
+      "requires": {
+        "balanced-match": "^1.0.0",
+        "concat-map": "0.0.1"
+      }
+    },
+    "buffer-crc32": {
+      "version": "0.2.13"
+    },
+    "colors": {
+      "version": "1.4.0"
+    },
+    "commander": {
+      "version": "8.3.0"
+    },
+    "concat-map": {
+      "version": "0.0.1"
+    },
+    "debug": {
+      "version": "4.3.3",
+      "requires": {
+        "ms": "2.1.2"
+      }
+    },
+    "end-of-stream": {
+      "version": "1.4.4",
+      "requires": {
+        "once": "^1.4.0"
+      }
+    },
+    "escape-string-regexp": {
+      "version": "1.0.5"
+    },
+    "extract-zip": {
+      "version": "2.0.1",
+      "requires": {
+        "@types/yauzl": "^2.9.1",
+        "debug": "^4.1.1",
+        "get-stream": "^5.1.0",
+        "yauzl": "^2.10.0"
+      }
+    },
+    "fd-slicer": {
+      "version": "1.1.0",
+      "requires": {
+        "pend": "~1.2.0"
+      }
+    },
+    "fs.realpath": {
+      "version": "1.0.0"
+    },
+    "get-stream": {
+      "version": "5.2.0",
+      "requires": {
+        "pump": "^3.0.0"
+      }
+    },
+    "glob": {
+      "version": "7.2.0",
+      "requires": {
+        "fs.realpath": "^1.0.0",
+        "inflight": "^1.0.4",
+        "inherits": "2",
+        "minimatch": "^3.0.4",
+        "once": "^1.3.0",
+        "path-is-absolute": "^1.0.0"
+      }
+    },
+    "graceful-fs": {
+      "version": "4.2.10"
+    },
+    "https-proxy-agent": {
+      "version": "5.0.0",
+      "requires": {
+        "agent-base": "6",
+        "debug": "4"
+      }
+    },
+    "inflight": {
+      "version": "1.0.6",
+      "requires": {
+        "once": "^1.3.0",
+        "wrappy": "1"
+      }
+    },
+    "inherits": {
+      "version": "2.0.4"
+    },
+    "ionicons": {
+      "version": "6.0.1",
+      "requires": {
+        "@stencil/core": "~2.12.0"
+      }
+    },
+    "ip": {
+      "version": "1.1.5"
+    },
+    "jpeg-js": {
+      "version": "0.4.3"
+    },
+    "jsonc-parser": {
+      "version": "3.0.0"
+    },
+    "mime": {
+      "version": "2.6.0"
+    },
+    "minimatch": {
+      "version": "3.0.4",
+      "requires": {
+        "brace-expansion": "^1.1.7"
+      }
+    },
+    "ms": {
+      "version": "2.1.2"
+    },
+    "once": {
+      "version": "1.4.0",
+      "requires": {
+        "wrappy": "1"
+      }
+    },
+    "path-is-absolute": {
+      "version": "1.0.1"
+    },
+    "pend": {
+      "version": "1.2.0"
+    },
+    "pixelmatch": {
+      "version": "5.2.1",
+      "requires": {
+        "pngjs": "^4.0.1"
+      }
+    },
+    "playwright": {
+      "version": "1.21.1",
+      "requires": {
+        "playwright-core": "1.21.1"
+      }
+    },
+    "playwright-core": {
+      "version": "1.21.1",
+      "requires": {
+        "colors": "1.4.0",
+        "commander": "8.3.0",
+        "debug": "4.3.3",
+        "extract-zip": "2.0.1",
+        "https-proxy-agent": "5.0.0",
+        "jpeg-js": "0.4.3",
+        "mime": "3.0.0",
+        "pixelmatch": "5.2.1",
+        "pngjs": "6.0.0",
+        "progress": "2.0.3",
+        "proper-lockfile": "4.1.2",
+        "proxy-from-env": "1.1.0",
+        "rimraf": "3.0.2",
+        "socks-proxy-agent": "6.1.1",
+        "stack-utils": "2.0.5",
+        "ws": "8.4.2",
+        "yauzl": "2.10.0",
+        "yazl": "2.5.1"
+      }
+    },
+    "pngjs": {
+      "version": "6.0.0"
+    },
+    "progress": {
+      "version": "2.0.3"
+    },
+    "proper-lockfile": {
+      "version": "4.1.2",
+      "requires": {
+        "graceful-fs": "^4.2.4",
+        "retry": "^0.12.0",
+        "signal-exit": "^3.0.2"
+      }
+    },
+    "proxy-from-env": {
+      "version": "1.1.0"
+    },
+    "pump": {
+      "version": "3.0.0",
+      "requires": {
+        "end-of-stream": "^1.1.0",
+        "once": "^1.3.1"
+      }
+    },
+    "retry": {
+      "version": "0.12.0"
+    },
+    "rimraf": {
+      "version": "3.0.2",
+      "requires": {
+        "glob": "^7.1.3"
+      }
+    },
+    "rxjs": {
+      "version": "6.6.7",
+      "peer": true,
+      "requires": {
+        "tslib": "^1.9.0"
+      }
+    },
+    "signal-exit": {
+      "version": "3.0.7"
+    },
+    "smart-buffer": {
+      "version": "4.2.0"
+    },
+    "socks": {
+      "version": "2.6.2",
+      "requires": {
+        "ip": "^1.1.5",
+        "smart-buffer": "^4.2.0"
+      }
+    },
+    "socks-proxy-agent": {
+      "version": "6.2.0",
+      "requires": {
+        "agent-base": "^6.0.2",
+        "debug": "^4.3.3",
+        "socks": "^2.6.2"
+      }
+    },
+    "stack-utils": {
+      "version": "2.0.5",
+      "requires": {
+        "escape-string-regexp": "^2.0.0"
+      }
+    },
+    "tslib": {
+      "version": "2.4.0"
+    },
+    "wrappy": {
+      "version": "1.0.2"
+    },
+    "ws": {
+      "version": "8.4.2",
+      "requires": {}
+    },
+    "yauzl": {
+      "version": "2.10.0",
+      "requires": {
+        "buffer-crc32": "~0.2.3",
+        "fd-slicer": "~1.1.0"
+      }
+    },
+    "yazl": {
+      "version": "2.5.1",
+      "requires": {
+        "buffer-crc32": "~0.2.3"
+      }
+    },
+    "zone.js": {
+      "version": "0.11.5",
+      "peer": true,
+      "requires": {
+        "tslib": "^2.3.0"
+      }
+    }
+  }
+}

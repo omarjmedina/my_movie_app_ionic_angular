@@ -6,15 +6,26 @@
 
 <ion-content>
   <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="title" (ionChange)="onSearchChange($event)"></ion-searchbar>
-
-  <!-- <ion-slides button *ngIf="title === ''">
-
-  </ion-slides> -->
-
-  <swiper #swiper>
-   <ng-template swiperSlide>Slide 1</ng-template>
-   <ng-template swiperSlide>Slide 2</ng-template>
-   <ng-template swiperSlide>Slide 3</ng-template>
+ 
+  <swiper *ngIf="title === ''" [config]="swiperConfig" #swiper>
+    <ng-template swiperSlide>
+      Slide 1
+    </ng-template>
+    <ng-template swiperSlide>
+      Slide 2
+    </ng-template>
+    <ng-template swiperSlide>
+      Slide 3
+    </ng-template>
+    <ng-template swiperSlide>
+      Slide 4
+    </ng-template>
+    <ng-template swiperSlide>
+      Slide 5
+    </ng-template>
+    <ng-template swiperSlide>
+      Slide 6
+    </ng-template>
   </swiper>
 
   <ion-list>

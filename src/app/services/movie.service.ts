@@ -8,14 +8,14 @@ import { IMovies } from '../model/IMovies.interface';
 })
 export class MovieService {
   private url: string='';
-  private apiKey: string='63705367';
+  private apiKey: string='63705367'; //apiKey from www.omdbAPI.com, max free 1000 request per day.
 
   constructor(private http: HttpClient) { }
 
   searchMovie(tittle: string){
-    this.url = `http://www.omdbapi.com/?s=${encodeURI(tittle)}&type=&apikey=${this.apiKey}`;
+    this.url = `http://www.omdbapi.com/?s=${encodeURI(tittle)}&apikey=${this.apiKey}`;
     console.log(this.url);
-    return this.http.get<IMovies>(this.url).pipe(map(results => results['Search']));
+    return this.http.get<IMovies>(this.url).pipe(map(res => res['Search']));
   }
 
   getMovieDetails(id: string){
