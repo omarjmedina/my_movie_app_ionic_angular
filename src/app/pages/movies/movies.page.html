@@ -6,25 +6,13 @@
 
 <ion-content>
   <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="title" (ionChange)="onSearchChange($event)"></ion-searchbar>
- 
+
+  <p class="ion-text-center">Most Relevant Movies</p>
   <swiper *ngIf="title === ''" [config]="swiperConfig" #swiper>
-    <ng-template swiperSlide>
-      Slide 1
-    </ng-template>
-    <ng-template swiperSlide>
-      Slide 2
-    </ng-template>
-    <ng-template swiperSlide>
-      Slide 3
-    </ng-template>
-    <ng-template swiperSlide>
-      Slide 4
-    </ng-template>
-    <ng-template swiperSlide>
-      Slide 5
-    </ng-template>
-    <ng-template swiperSlide>
-      Slide 6
+    <ng-template swiperSlide *ngFor="let movieslide of relMovie">
+      <ion-item [routerLink]="['/', 'movie-details', movieslide.id]">
+       <ion-img [src]="movieslide.imgUrl"></ion-img>
+      </ion-item>
     </ng-template>
   </swiper>
 

@@ -8,3 +8,10 @@ export interface IMovies{
   Poster: string;
   Type: string;
 }
+
+export interface IRelMovies{
+  id: string;
+  title: string;
+  year: string;
+  imgUrl: string;
+}

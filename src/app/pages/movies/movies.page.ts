@@ -1,7 +1,7 @@
 import { MovieService } from './../../services/movie.service';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IMovies } from 'src/app/model/IMovies.interface';
+import { IMovies, IRelMovies } from 'src/app/model/IMovies.interface';
 import Swiper, {Pagination, SwiperOptions} from 'swiper';
 
 @Component({
@@ -12,17 +12,19 @@ import Swiper, {Pagination, SwiperOptions} from 'swiper';
 })
 export class MoviesPage implements OnInit {
   results: Observable<IMovies>;
-  title: string = '';
+  title = '';
+  relMovie: IRelMovies[];
+
   public swiperConfig: SwiperOptions = {
     slidesPerView: 2,
-    
-    pagination: true
+    pagination: { clickable: true },
   };
 
   constructor(private movieSv: MovieService) { }
 
   ngOnInit() {
     Swiper.use([Pagination]);
+    this.relMovie = this.movieSv.getRelevantMovies();
   }
 
   onSearchChange(){
