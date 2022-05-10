@@ -21,7 +21,7 @@ export class MovieService {
       id: 'tt1211837',
       title: 'Doctor Strange',
       year: '2016',
-      imgUrl: 'https://play-lh.googleusercontent.com/Yb738-bvnxpVMYJr3Gb_Lr16G6wtVGhzBJE_Eic2IhS44Ty-2o7IHW2EyeASSeD5f3tpFg'
+      imgUrl: 'https://www.aceprensa.com/wp-content/uploads/2016/10/284052-0.jpg'
     },
     {
       id: 'tt1300854',

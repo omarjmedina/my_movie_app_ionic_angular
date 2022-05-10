@@ -30,8 +30,18 @@
       </ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-    <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img ion-marging">
-    {{content?.Plot}}
+      <ion-grid>
+        <ion-row class="ion-text-center">
+          <ion-col
+          size-xs="12"
+          size-md="6"
+          offset-md="3"
+          >
+            <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img ion-marging">
+            {{content?.Plot}}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     <ion-item lines="none">
       <ion-icon slot="start" name="star-half"></ion-icon>
       <ion-label>{{content?.imdbRating}}</ion-label>
