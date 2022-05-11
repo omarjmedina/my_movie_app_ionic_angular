@@ -6,8 +6,14 @@
 
 <ion-content>
   <ion-searchbar placeholder="What do you want to watch?" [(ngModel)]="title" (ionChange)="onSearchChange($event)"></ion-searchbar>
-
+  
   <p class="ion-text-center" *ngIf="title === ''">Most Relevant Movies</p>
+  <div class="ion-text-center" *ngIf="title === ''">
+    <ion-button (click)="OnFavorites()">
+      <ion-icon slot="start" name="star"></ion-icon>
+     My Favorites
+    </ion-button>
+  </div>
   <swiper *ngIf="title === ''" [config]="swiperConfig" #swiper>
     <ng-template swiperSlide *ngFor="let movieslide of relMovie">
       <ion-item [routerLink]="['/', 'movie-details', movieslide.id]">

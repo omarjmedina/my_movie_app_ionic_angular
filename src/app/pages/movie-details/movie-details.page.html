@@ -16,7 +16,7 @@
     <ion-card-header class="ion-text-center">
       <ion-card-title>{{content?.Title}}</ion-card-title>
       <ion-card-subtitle>
-        <ion-grid>
+        <ion-grid class="ion-text-center">
           <ion-row>
             <ion-col>Year: {{content?.Year}}</ion-col>
           </ion-row>
@@ -37,8 +37,10 @@
           size-md="6"
           offset-md="3"
           >
-            <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img ion-marging">
-            {{content?.Plot}}
+            <img *ngIf="content?.Poster !== 'N/A'" src="{{content?.Poster}}" class="info-img">
+            <div class="ion-padding">
+             {{content?.Plot}}
+            </div>
           </ion-col>
         </ion-row>
       </ion-grid>

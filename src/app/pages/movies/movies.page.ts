@@ -3,6 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable } from 'rxjs';
 import { IMovies, IRelMovies } from 'src/app/model/IMovies.interface';
 import Swiper, {Pagination, SwiperOptions} from 'swiper';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-movies',
@@ -21,7 +22,7 @@ export class MoviesPage implements OnInit {
     spaceBetween: 5
   };
 
-  constructor(private movieSv: MovieService) { }
+  constructor(private movieSv: MovieService, private router: Router) { }
 
   ngOnInit() {
     Swiper.use([Pagination]);
@@ -31,6 +32,11 @@ export class MoviesPage implements OnInit {
   onSearchChange(){
     this.results = this.movieSv.searchMovie(this.title);
     console.log(this.results);
+  }
+
+  OnFavorites(){
+   console.log('Go to favorites');
+   this.router.navigateByUrl('movie-favorites');   
   }
 
 }
