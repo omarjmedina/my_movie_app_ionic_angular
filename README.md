@@ -1,1 +1,3 @@
-# my_movie_app_ionic_angular
+npm install cordova-sqlite-storage
+npm install @ionic-native/sqlite
+ionic cap sync
